@@ -1,0 +1,22 @@
+div{
+    height: 300px;
+    width: 300px;
+    background-color: aquamarine;
+    border: 4px solid black;
+    /* transition: all;
+    transition-duration: 2s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 1s; */
+
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1)  ;
+    margin: 0 auto;
+}
+
+div:hover{
+    background-color: red;
+    font-size: 20px;
+    color: white;
+}
+div:active{
+    background-color: plum;
+}

@@ -1,0 +1,25 @@
+.div1{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+    background-color: tomato;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    
+    
+}
+span{
+    border: 2px solid rgb(216, 22, 158);
+    border-radius: 5px;
+    font-size: 30px;
+    background-color: rgb(175,9,9);
+    color: #fff;
+    padding: 10px;
+    margin: 50px;
+
+    
+   
+    
+}
