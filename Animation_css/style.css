@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* TRANSITION */
+
+/* .box {
+  display: inline block;
+  height: 350px;
+  width: 350px;
+  background-color: palevioletred;
+  border-radius: 15px;
+  transition: transform 1s ease-in-out;
+  text-align: center;
+}
+
+.cont {
+  height: 410px;
+  width: 410px;
+  border: 30px solid #999;
+  background-color: #ddd;
+
+  margin: 0 auto;
+}
+
+.cont:hover .box {
+  transform: translate(200px, 350px) rotate(20deg);
+}  */
+
+/* ANIMATION */
+
+/* .box {
+  background-color: palevioletred;
+  width: 350px;
+  height: 350px;
+  position: relative;
+  animation: frames 2s ease-in-out 0.5s 2 alternate forwards;
+}
+
+@keyframes frames {
+  from {
+    background-color: palevioletred;
+    width: 350px;
+    height: 350px;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    background-color: aqua;
+    border-radius: 15px;
+    top: 100px;
+    left: 80px;
+    transform: rotate(45deg);
+  }
+}  */
+
+/* .box {
+  height: 300px;
+  width: 300px;
+  background-color: salmon;
+  border: 4px solid black;
+}
+
+button {
+  padding: 8px 20px;
+  border: none;
+  background-color: rgb(76, 143, 231);
+  color: #fff;
+  width: 200px;
+  height: 60px;
+
+  position: relative;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(76, 143, 231);
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover::before {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.box::before {
+  content: "YO ";
+}
+
+.box::after {
+  content: " YUP";
+} */
