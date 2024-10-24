@@ -1,0 +1,68 @@
+/* CLASS SELECTORS */
+
+.html {
+  color: red;
+  background-color: aqua;
+  font-size: 50px;
+}
+
+.css {
+  color: blue;
+  font-size: 20px;
+}
+.js {
+  color: yellow;
+  background-color: black;
+  font-size: 20px;
+}
+
+/* ID SELECTOR */
+
+#h {
+  color: red;
+  background-color: aqua;
+  font-size: 20px;
+}
+
+#c {
+  color: blue;
+  font-size: 20px;
+}
+
+#j {
+  color: green;
+
+  font-size: 50px;
+}
+
+/* ATTRIBUTE SELECTOR */
+
+li[class="a"] {
+  color: red;
+  background-color: aqua;
+  font-size: 50px;
+}
+
+li[class="b"] {
+  color: blue;
+  font-size: 50px;
+}
+
+li[class="c"] {
+  color: yellow;
+  background-color: black;
+  font-size: 50px;
+}
+
+/* COMBINATOR SELECTOR */
+
+ul p {
+  color: red;
+  font-size: 30px;
+}
+
+/* pseudo selector */
+
+h1:hover {
+  color: aqua;
+}

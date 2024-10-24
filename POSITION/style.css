@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 2px solid rgb(131, 4, 143);
+  margin: 20px;
+  position: relative;
+  height: 2200px;
+  width: 5000px;
+}
+.box {
+  border: 2px solid red;
+  padding: 10px;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  font-weight: 800;
+  display: inline-block;
+}
+.relative {
+  position: relative;
+  top: 100px;
+  left: 300px;
+}
+
+.absolute {
+  position: absolute;
+  /* bottom: 800px;  */
+  top: 600px;
+
+  left: 100px;
+}
+.fixed {
+  position: fixed;
+  top: 250px;
+  left: 750px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 750px;
+}
+.container_2 {
+  border: 2px solid rgb(255, 192, 241);
+  height: 1000px;
+}

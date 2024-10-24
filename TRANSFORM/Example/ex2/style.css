@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parrent {
+  height: 400px;
+  width: 400px;
+  background-color: gray;
+  border-radius: 12px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  transform: rotateY(45deg);
+}
+.child {
+  height: 400px;
+  width: 400px;
+  background-color: pink;
+  border-radius: 12px;
+  transition: transform 3s ease-in-out;
+}
+
+.child:hover {
+  transform: rotateX(180deg);
+}

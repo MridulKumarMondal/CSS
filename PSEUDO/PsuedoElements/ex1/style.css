@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* EXAMPLE 1:- */
+
+.btn1 {
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 12px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+
+  top: 0;
+  /* left: -100%; */
+  left: -50%;
+  z-index: -1;
+
+  transition: 0.4s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn1:hover::before {
+  left: 0;
+  background-color: aqua;
+}
+
+/* EXAMPLE 2:- */
+
+.btn2 {
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 12px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn2::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+
+  top: 0;
+  /* left: -100%; */
+  right: -50%;
+  z-index: -1;
+
+  transition: 0.4s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn2:hover::after {
+  right: 0;
+  background-color: blueviolet;
+}
+
+/* EXAMPLE 3:- */
+
+.btn3 {
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 12px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn3::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: -90%;
+  transition: 0.4s ease-in-out;
+
+  z-index: -1;
+}
+
+.btn3::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: red;
+  top: 0;
+
+  right: -90%;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.btn3:hover::before {
+  left: -50%;
+  background-color: yellow;
+}
+
+.btn3:hover::after {
+  right: -50%;
+  background-color: yellow;
+}
+
+/* EXAMPLE 4:- */
+
+.btn4 {
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 12px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn4::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.btn4::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  right: -50%;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.btn4:hover::before {
+  left: -100%;
+}
+.btn4:hover::after {
+  right: -100%;
+}
+
+/* EXAMPLE 5:- */
+
+.btn5 {
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid blue;
+  color: black;
+  border-radius: 12px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn5::before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background-color: blue;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+.btn5::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background-color: blue;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+
+.btn5:hover::before {
+  top: -50%;
+}
+.btn5:hover::after {
+  bottom: -50%;
+}
+
+/* EXAMPLE 6 :- */
+
+.btn6 {
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 12px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn6::before {
+  content: "";
+  position: absolute;
+  background-color: palevioletred;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+.btn6::after {
+  content: "";
+  position: absolute;
+  background-color: palevioletred;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -100%;
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+}
+
+.btn6:hover::before {
+  transform: translateX(50%) rotate(180deg);
+}
+
+.btn6:hover::after {
+  transform: translateX(-50%) rotate(-180deg);
+}
+
+/* EXAMPLE 7 :- */
+
+.btn7 {
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 12px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn7::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 86px;
+  top: 20px;
+  background-color: red;
+  z-index: -1;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+}
+
+.btn7:hover::before {
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+}

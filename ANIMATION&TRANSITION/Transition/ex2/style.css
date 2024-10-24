@@ -1,0 +1,48 @@
+.cont {
+  width: 300px;
+  height: 300px;
+  border: 8px solid gray;
+  background-color: #ddd;
+}
+.box {
+  background-color: rgb(209, 102, 120);
+  height: 300px;
+  width: 300px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  transition: transform 1s ease-in-out;
+}
+
+.cont:hover .box {
+  transform: translate(200px, 150px) rotate(20deg);
+  border-radius: 20px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgb(39, 183, 225);
+  width: 200px;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+button::before {
+  content: "";
+  background-color: rgb(39, 183, 225);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transition: all ease 0.2s;
+}
+
+button:hover::before {
+  transform: scale(1.5);
+  opacity: 0;
+}

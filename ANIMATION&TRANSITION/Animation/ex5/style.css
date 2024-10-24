@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  animation: colour 0.5ms none infinite linear;
+}
+
+@keyframes colour {
+  0% {
+    background-color: white;
+  }
+  10% {
+    background-color: lightcyan;
+  }
+  20% {
+    background-color: lightblue;
+  }
+  30% {
+    background-color: skyblue;
+  }
+  40% {
+    background-color: lightgreen;
+  }
+  50% {
+    background-color: yellow;
+  }
+  60% {
+    background-color: orange;
+  }
+  70% {
+    background-color: coral;
+  }
+  80% {
+    background-color: tomato;
+  }
+  90% {
+    background-color: orangered;
+  }
+  100% {
+    background-color: red;
+  }
+}

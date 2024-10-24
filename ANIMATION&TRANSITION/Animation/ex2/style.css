@@ -1,0 +1,35 @@
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  position: relative;
+  display: inline-block;
+  animation: anim 2s ease-in-out 0s infinite alternate;
+}
+
+/* @keyframes anim {
+  from {
+    height: 300px;
+  }
+  to {
+    height: 800px;
+  }
+} */
+
+@keyframes anim {
+  0% {
+    height: 300px;
+    width: 300px;
+  }
+
+  70% {
+    width: 600px;
+    background-color: orange;
+  }
+
+  100% {
+    height: 1000px;
+    width: 300px;
+    transform: rotate(360deg);
+  }
+}

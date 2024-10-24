@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 500px;
+  width: 500px;
+  background-color: antiquewhite;
+  border-radius: 12px;
+  border: 8px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 200px;
+  width: 200px;
+
+  border: 4px solid black;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  perspective: 1200px; /* for 3d effect */
+
+  /* Perspective is always used in the parrent container */
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: blueviolet;
+  border: 4px solid black;
+  border-radius: 12px;
+  opacity: 0.5;
+
+  /* transform: translateX(-250px); */
+  /* transform: translateY(-250px); */
+
+  /* transform: translateZ(400px); 
+  /* transform: translateZ(-500px); */
+  /* transform: rotateX(-30deg) rotatey(-45deg); */
+
+  /* transform: rotateX(60deg) translateZ(20px); */
+
+  /* transform-origin: top; */
+
+  /* transform-origin: center right; */
+
+  /* transform: rotate(130deg); */
+}

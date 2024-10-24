@@ -1,0 +1,33 @@
+.box {
+  background-color: tomato;
+  margin: 100px auto;
+
+  position: relative;
+  width: 400px;
+  height: 400px;
+  animation-name: square;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes square {
+  0% {
+    background-color: aqua;
+  }
+  25% {
+    transform: rotate(45deg);
+    background-color: green;
+  }
+  75% {
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    background-color: red;
+    width: 500px;
+    height: 500px;
+  }
+}
